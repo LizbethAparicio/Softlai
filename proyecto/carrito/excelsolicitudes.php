@@ -1,31 +1,28 @@
 <?php
 
-header("Content-type: application/vnd.ms-word");
-header("Content-Disposition: attachment; filename=Reporte_de_provedores.doc");
+header("Content-type: application/vnd.ms-excel");
+header("Content-Disposition: attachment; filename=Reporte_de_solicitudes.xls");
 
-
+require('conexion.php');
 ?>
 <!DOCTYPE html>
 <html >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LISTA DE SOLICITUDES</title>
+<title>LISTA DE USUARIOS</title>
 </head>
 <body>
 <table width="100%" border="1" cellspacing="0" cellpadding="0">
   <tr>
-    <td colspan="9" bgcolor="skyblue"><CENTER><strong>REPORTE DE LOS PROVEDORES</strong></CENTER></td>
+    <td colspan="5" bgcolor="skyblue"><CENTER><strong>REPORTE DE LAS SOLICITUDES</strong></CENTER></td>
   </tr>
   <tr>
-   <td><strong>RFC</strong></td>
-    <td><strong>Nombre</strong></td>
-    <td><strong>Apellidos</strong></td>
-    <td><strong>Ciudad</strong></td>
-     <td><strong>Estado</strong></td>
-     <td><strong>Colonia</strong></td>
-      <td><strong>Calle/Num</strong></td>
-     <td><strong>C.P</strong></td>
-     <td><strong>Telefono</strong></td> 
+   <td><strong>Nombre</strong></td>
+    <td><strong>Marca</strong></td>
+    <td><strong>Precio</strong></td>
+    <td><strong>cantidad</strong></td>
+     <td><strong>subtotal</strong></td>
+     
      </tr>
   
 <?php
@@ -34,7 +31,7 @@ header("Content-Disposition: attachment; filename=Reporte_de_provedores.doc");
       $numeroventa=0;
       while ($f=mysql_fetch_array($re)) {
           if($numeroventa !=$f['numeroventa']){
-            echo '<tr><td colspan="5" cellpadding="3px" cellspacing="3px">Compra Número: '.$f['numeroventa'].' </td></tr>';
+            echo '<tr><td colspan="5" cellpadding="3px" cellspacing="3px"><h3>Compra Número:'.$f['numeroventa'].'</h3>  </td></tr>';
           }
           $numeroventa=$f['numeroventa'];
           echo '<tr>

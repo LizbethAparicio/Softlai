@@ -1,0 +1,33 @@
+To: lizar_238@hotmail.com
+Subject: Solicitud de materiales
+MIME-Version: 1.0
+Content-type: text/html; charset=utf8
+From: Remitente
+
+
+        <div style="
+	        border: 1px solid #d6d2d2;
+	        border-radius: 5px;
+	        box-shadow: 5px 5px 10px rgba(57,29,150,0.5);
+	        color:#9378f0;
+	        paddin:10px;
+	        width:800px%;
+	        heigth:400px;
+        ">
+        <center>
+        <img src="http://www.ideasmx.com.mx/blog/wp-content/uploads/2008/12/google_mexico_logo.jpg" width="400" heigth="250">
+        <h1><em>Muchas Gracias por tu compra</em></h1></center>
+
+            <hr width="90%">
+
+            <p>Hola muchas gracias por realizar la solicitud en nuestro sitio a continuación te mostramos los detalles de la misma.</p>
+            Cantidad de articulos: 0<br>
+            Lista de Articulos: <br>
+            <table border="1"><tr>
+		<th>Nombre</th>
+		<th>Marca</th>
+		
+		<th>Cantidad</th>
+		<th>Precio</th>
+		<th>Subtotal</th></tr><br>
+            Total: 0
